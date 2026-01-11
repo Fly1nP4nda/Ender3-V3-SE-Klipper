@@ -18,12 +18,7 @@ The provided `printer.cfg` corrects build area alignment issues present in the r
 <img width="1620" height="1215" alt="image" src="https://github.com/user-attachments/assets/0b2f83c2-f931-450a-b1ad-a5aaa8c1c6dd" />
 
 
-This configuration shifts the build area as far right as possible, leaving small gaps on the top, right, and bottom edges to ensure reliable homing and print placement. This results in:
-
-- Proper alignment of prints within the true build area
-- Avoidance of edge collisions and missed homing
-- Improved reliability for adaptive bed leveling and purge macros
-
+This configuration shifts the build area as far right as possible, leaving small gaps on the top, right, and bottom edges to ensure reliable homing and print placement.
 ## Files
 
 - `printer.cfg`: Main Klipper configuration for Ender 3 V3 SE, including pin mappings, stepper settings, bed mesh, BLTouch, fans, heaters, and safety features.
