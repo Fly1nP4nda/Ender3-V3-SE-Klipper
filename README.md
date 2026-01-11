@@ -15,6 +15,9 @@ https://athemis.me/projects/klipper_guide/#configuration:~:text=2025%20Update%3A
 
 The provided `printer.cfg` corrects build area alignment issues present in the referenced configs. The original configs set prints too far to the left or right, at the edge of the stock Ender 3 V3 SE bed (nominally 235x235mm). However, the actual usable build space is 220x220mm.
 
+<img width="1620" height="1215" alt="image" src="https://github.com/user-attachments/assets/0b2f83c2-f931-450a-b1ad-a5aaa8c1c6dd" />
+
+
 This configuration shifts the build area as far right as possible, leaving small gaps on the top, right, and bottom edges to ensure reliable homing and print placement. This results in:
 
 - Proper alignment of prints within the true build area
