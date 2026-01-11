@@ -9,8 +9,6 @@ This repository contains Klipper configuration files for the Creality Ender 3 V3
 
 These configuration files are based on the guide from [athemis.me](https://athemis.me/projects/klipper_guide/), specifically the 2025 update recommending shubham0x13's config file:
 
-https://athemis.me/projects/klipper_guide/#configuration:~:text=2025%20Update%3A%20I%20recommend%20shubham0x13%E2%80%99s%20config%20file%20that%20has%20several%20upgrades%20compared%20to%20bootuz%E2%80%99s%20config%20file%2E%20Copy%20and%20paste%20the%20contents%20of%20printer%2Ecfg%20and%20macro%2Ecfg%20into%20yours
-
 ## Corrections & Improvements
 
 The provided `printer.cfg` corrects build area alignment issues present in the referenced configs. The original configs set prints too far to the left or right, at the edge of the stock Ender 3 V3 SE bed (nominally 235x235mm). However, the actual usable build space is 220x220mm.
@@ -40,5 +38,3 @@ This configuration shifts the build area as far right as possible, leaving small
 
 This configuration uses the `LINE_PURGE` macro in place of `ADAPTIVE_LINE_PURGE`. The `LINE_PURGE` macro draws a purge line along the left edge of the build plate, near or directly on the stock purge illustration. This ensures reliable nozzle priming and is compatible with the shifted build area alignment.
 
----
-For questions or improvements, refer to the upstream guide or open an issue in this repository.
