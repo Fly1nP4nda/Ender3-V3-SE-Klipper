@@ -17,6 +17,7 @@ The provided `printer.cfg` corrects build area alignment issues present in the r
 
 
 This configuration shifts the build area as far right as possible, leaving small gaps on the top, right, and bottom edges to ensure reliable homing and print placement.
+
 ## Files
 
 - `printer.cfg`: Main Klipper configuration for Ender 3 V3 SE, including pin mappings, stepper settings, bed mesh, BLTouch, fans, heaters, and safety features.
@@ -37,4 +38,18 @@ This configuration shifts the build area as far right as possible, leaving small
 ### Purge Macros
 
 This configuration uses the `LINE_PURGE` macro in place of `ADAPTIVE_LINE_PURGE`. The `LINE_PURGE` macro draws a purge line along the left edge of the build plate, near or directly on the stock purge illustration. This ensures reliable nozzle priming and is compatible with the shifted build area alignment.
+
+### Slicer G-code Setup
+
+**Start G-code:**
+
+```
+PRINT_START BED=[first_layer_bed_temperature] EXTRUDER=[first_layer_temperature]
+```
+
+**End G-code:**
+
+```
+PRINT_END
+```
 
